@@ -15,15 +15,15 @@ RUN mkdir -p /opt/nginx/html
 
 ADD ivydad.tar.gz /opt/nginx/html
 
-ADD ./run.sh /opt/run.sh
+#ADD ./run.sh /opt/run.sh
 
-RUN chmod 777 /opt/run.sh
+#RUN chmod 777 /opt/run.sh
 
 EXPOSE 80
 
-VOLUME ["/ect/nginx"]
+VOLUME ["/ect/nginx/conf.d","/var/log/nginx"]
 
-WORKDIR /opt/ngnx/html/ivydad
+WORKDIR /opt/nginx/html/ivydad
 
 CMD ["nginx", "-g", "daemon off;"]
 
