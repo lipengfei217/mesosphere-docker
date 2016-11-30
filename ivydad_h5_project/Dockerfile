@@ -2,7 +2,7 @@
 # VERSION        0.5
 # SOURCE         https://github.com/jplock/docker-zookeeper
 
-FROM hub.c.163.com/lipengfei217/sshd:0.1 
+FROM hub.c.163.com/public/centos:7.2.1511 
 
 MAINTAINER Pengfei Lee <pengfei.li@ivydad.com>
 
